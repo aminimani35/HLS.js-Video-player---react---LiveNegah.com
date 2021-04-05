@@ -14,10 +14,10 @@ const Player = ({link}) => {
    
         hls.on(Hls.Events.MANIFEST_PARSED, function (event, data) {
             setQLevels(hls.levels)
-            console.log(hls.levels,'state');
+            // console.log(hls.levels,'state');
             if(hls.levels.length!==0){
                 setQLevels(hls.levels)
-                console.log(qLevels);
+                // console.log(qLevels);
             }
           });
      }
@@ -25,6 +25,7 @@ const Player = ({link}) => {
    return ( 
         <div className="video-player">
             <video ref={video}controls></video>
+            {qLevels.map(level=>console.log(level.url))};
         </div>
      );
 }
