@@ -1,4 +1,20 @@
 video{
     width: 80vw;
-    /* background-color: #333; */
+    position: relative;
+}
+
+.btn-list{
+    display: block;
+    /* flex-basis: 60vw; */
+    /* flex-flow: row nowrap; */
+}
+
+.btn-quality-level{
+    padding: 1em;
+    background-color: crimson;
+    color:White;
+    border:0;
+    outline: 0;
+    margin:.5em .2em;
+    cursor: pointer;
 }

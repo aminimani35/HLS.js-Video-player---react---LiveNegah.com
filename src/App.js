@@ -4,7 +4,7 @@ import Container from './pages/Container/Container';
 function App() {
   return (
     <div className="App">
-      HLS Video Player 
+      Live Negah HLS Video Player 
       <Container/>
     </div>
   );
