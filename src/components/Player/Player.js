@@ -35,14 +35,13 @@ const Player = () => {
    return ( 
         <div className="video-player">
             {/* Video Container */}
-            <video ref={video} preload={true} controls>
-            {qLevels.map((level,index)=>{
-                return <source key={index} label={level.height} src={level.url} />
-            })};
-            </video>
+            <video ref={video} preload controls></video>
+           
             <div className="btn-list">
 
-          
+            {qLevels.map((level,index)=>{
+                return <button onClick={()=>setUrl(level.url[0])} className="btn-quality-level" key={index} label={level.height} src={level.url}>{level.height}</button>
+            })};
 
             </div>
         </div>
